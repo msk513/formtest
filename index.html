@@ -21,6 +21,7 @@
 	}
 </style>
 
+<script type='text/javascript'>
 var $jscomp=$jscomp||{};$jscomp.scope={};$jscomp.arrayIteratorImpl=function(c){var b=0;return function(){return b<c.length?{done:!1,value:c[b++]}:{done:!0}}};$jscomp.arrayIterator=function(c){return{next:$jscomp.arrayIteratorImpl(c)}};$jscomp.ASSUME_ES5=!1;$jscomp.ASSUME_NO_NATIVE_MAP=!1;$jscomp.ASSUME_NO_NATIVE_SET=!1;$jscomp.SIMPLE_FROUND_POLYFILL=!1;
 $jscomp.defineProperty=$jscomp.ASSUME_ES5||"function"==typeof Object.defineProperties?Object.defineProperty:function(c,b,e){c!=Array.prototype&&c!=Object.prototype&&(c[b]=e.value)};$jscomp.getGlobal=function(c){c=["object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global,c];for(var b=0;b<c.length;++b){var e=c[b];if(e&&e.Math==Math)return e}return globalThis};$jscomp.global=$jscomp.getGlobal(this);$jscomp.SYMBOL_PREFIX="jscomp_symbol_";
 $jscomp.initSymbol=function(){$jscomp.initSymbol=function(){};$jscomp.global.Symbol||($jscomp.global.Symbol=$jscomp.Symbol)};$jscomp.SymbolClass=function(c,b){this.$jscomp$symbol$id_=c;$jscomp.defineProperty(this,"description",{configurable:!0,writable:!0,value:b})};$jscomp.SymbolClass.prototype.toString=function(){return this.$jscomp$symbol$id_};
@@ -86,7 +87,6 @@ document.head.appendChild(b);b.sheet.insertRule(".sfid-logout { display: none; }
 a}this.settings.targetElement.classList.add("slds-scope");a=document.createElement("link");a.href=(this.settings.gslbBaseURL?this.settings.gslbBaseURL:this.settings.baseCoreURL)+"/embeddedservice/"+this.settings.releaseVersion+"/esw-slds"+(this.settings.devMode?"":".min")+".css";a.type="text/css";a.rel="stylesheet";document.getElementsByTagName("head")[0].appendChild(a)};b.prototype.validateHeaderValue=function(a){return/^[0-9a-zA-Z!#$%&'*+-.^_`|~" ]*$/g.test(a)};b.prototype.isLanguageRtl=function(a){if(a&&
 ""!==a.trim())switch(a.substring(0,2)){case "ar":case "fa":case "he":case "iw":case "ji":case "ur":case "yi":return!0;default:return!1}};b.prototype.isDesktop=function(){return-1===navigator.userAgent.indexOf("Mobi")};window.embedded_svc=new b;Object.getOwnPropertyNames(c).forEach(function(a){var b=c[a];"object"===b?(window.embedded_svc[a]={},Object.keys(b).forEach(function(c){window.embedded_svc[a][c]=b[c]})):window.embedded_svc[a]=b})})(window.embedded_svc||{});	
 	
-<script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //または false
 		embedded_svc.settings.language = 'en-US'; //たとえば、「en」または「en-US」を入力します
