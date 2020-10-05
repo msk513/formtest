@@ -41,7 +41,7 @@ function getUrlVars()
     
 </script>
 </head>
-<BODY onanload="getUrlVars()">
+<BODY>
 <form>
     FistName<input type="text" id="FistName" value="aaaa"></input></br></br>
     LastName<input type="text" id="LastName" value="bbbb"></input></br></br>
@@ -49,6 +49,6 @@ function getUrlVars()
     <input type="submit" value="Send">
 </form>
 
-<input type="button" value="test"></input>
+<input type="button" value="test" onclick="getUrlVars()"></input>
 </BODY>
 </HTML>
