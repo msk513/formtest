@@ -36,18 +36,19 @@ d)}}.bind(this));window.addEventListener("storage",function(a){if(0===a.key.inde
 typeof b){var c=this.callbacks[a].indexOf(b);this.callbacks[a].splice(c,1)}"function"===typeof b&&0!==this.callbacks[a].length||delete this.callbacks[a]}};d.prototype.send=function(a,b){a=this.prefix+a;this.safariWorkaroundStoreOutgoingForTab(a,b);null===this.storage.getItem(a)?(this.storage.setItem(a,this.stringify(b)),this.storage.removeItem(a)):(a in this.queue||(this.queue[a]=[]),this.queue[a].push(b))};d.prototype.broadcast=function(a,b){a in this.callbacks&&this.callbacks[a].forEach(function(a){a(b)})};
 d.prototype.stringify=function(a){return JSON.stringify(a,function(a,b){return void 0===b?null:b})};"none"!=b.getSafariType()?(d.prototype.safariWorkaroundStoreOutgoingForTab=function(a,b){a=this.stringify({key:a,data:b});this.postedEvents.add(a);this.postedEvents2.add(a)},d.prototype.safariWorkaroundIgnoreSameTabEvents=function(a,b){a=this.stringify({key:a,data:b});return this.postedEvents.delete(a)||this.postedEvents2.delete(a)}):(d.prototype.safariWorkaroundStoreOutgoingForTab=function(a,b){},
 d.prototype.safariWorkaroundIgnoreSameTabEvents=function(a,b){return!1});b.broadcastAPI=new d});
+</script>
+
 	
-	
-	
+<script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //または false
-		embedded_svc.settings.language = 'en-US'; //たとえば、「en」または「en-US」を入力します
+		embedded_svc.settings.language = ''; //たとえば、「en」または「en-US」を入力します
 
-		embedded_svc.settings.defaultMinimizedText = 'Start Chat'; //(エキスパートとチャットにデフォルト設定)
-		embedded_svc.settings.disabledMinimizedText = 'Offline'; //(エージェントがオフラインにデフォルト設定)
+		//embedded_svc.settings.defaultMinimizedText = '...'; //(エキスパートとチャットにデフォルト設定)
+		//embedded_svc.settings.disabledMinimizedText = '...'; //(エージェントがオフラインにデフォルト設定)
 
-		embedded_svc.settings.loadingText = 'Loading...'; //(読み込み中にデフォルト設定)
-		embedded_svc.settings.storageDomain = 'hrd-formtest.herokuapp.com'; //(リリースのドメインを設定して、訪問者がチャットセッション中にサブドメインを移動できるようにします)
+		//embedded_svc.settings.loadingText = ''; //(読み込み中にデフォルト設定)
+		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(リリースのドメインを設定して、訪問者がチャットセッション中にサブドメインを移動できるようにします)
 
 		// チャット の設定
 		//embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
@@ -80,7 +81,7 @@ d.prototype.safariWorkaroundIgnoreSameTabEvents=function(a,b){return!1});b.broad
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://hrd-formtest.herokuapp.com/esw.min.js');
+		s.setAttribute('src', 'https://proactiv20191128.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
