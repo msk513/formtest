@@ -1,10 +1,19 @@
 
 <!DOCTYPE HTML>
 <HTML>
-<head>
-<script>
+<BODY>
+<form>
+    FistName<input type="text" id="FistName"></input></br></br>
+    LastName<input type="text" id="LastName"></input></br></br>
+    Address<input type="text" id="Address"></input></br></br>
+    <input type="submit" value="Send">
+</form>
 
-    
+<input type="button" value="test2" onclick="getUrlVars()"></input>
+
+
+
+<script>
 function getUrlVars()
 {
     var vars = [], hash;
@@ -33,15 +42,6 @@ function getUrlVars()
 getUrlVars()
     
 </script>
-</head>
-<BODY>
-<form>
-    FistName<input type="text" id="FistName"></input></br></br>
-    LastName<input type="text" id="LastName"></input></br></br>
-    Address<input type="text" id="Address"></input></br></br>
-    <input type="submit" value="Send">
-</form>
 
-<input type="button" value="test2" onclick="getUrlVars()"></input>
 </BODY>
 </HTML>
