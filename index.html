@@ -4,9 +4,6 @@
 <head>
 <script>
 
-    alert(document.getElementById("FirstName").value);
-    alert(document.getElementById('FirstName').value);
-
     
 function getUrlVars()
 {
@@ -19,6 +16,11 @@ function getUrlVars()
         {
          hash = hashes[i].split('=');
          if(hash[0]=='FirstName'){
+
+    alert(document.getElementById("FirstName").value);
+    alert(document.getElementById('FirstName').value);
+             
+             
              document.getElementById('FirstName').value = hash[1] ;
 //         alert('hash='+hash);
 //         alert('hash[0]='+hash[0]);
